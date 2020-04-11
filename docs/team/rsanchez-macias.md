@@ -8,17 +8,19 @@ application using a CLI. It is written in Java.
 
 
 ### Summary of Contributions
-* Code Contributed: [Functional Code](https://nus-cs2113-ay1920s2.github.io/tp-dashboard/#search=rsanchez-macias&sort=groupTitle&sortWithin=title&since=2020-03-01&timeframe=commit&mergegroup=false&groupSelect=groupByRepos&breakdown=false)
+* Code Contributed: [Functional Code](https://nus-cs2113-ay1920s2.github.io/tp-dashboard/#=undefined&search=rsanchez-macias)
 * Contributions: <br/>
   * TaskList(initial version): manages the tasks in the list <br/>
   * JUnit Tests: added tests for Parser and Storage class
   * UI: refactored messages to Message class and formatted feedback shown to the user
+     * Categorize type of errors as `error` and `alert`
   * Storage: able to instantiate Json strings to Class and NonClassTask instances
   * Find Command(initial version): searches pattern in task title and description only 
   * Clear Command: clears output in terminal window <br/>
   * Help Command: formatted output to follow UG
   * Documentation: fix links to UG, DG, and About Us
-  
+
+
 
 ### Contribution to User Guide:
 
