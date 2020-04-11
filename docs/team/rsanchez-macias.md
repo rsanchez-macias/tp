@@ -8,7 +8,7 @@ application using a CLI. It is written in Java.
 
 
 ### Summary of Contributions
-* Code Contributed: [Functional Code](https://nus-cs2113-ay1920s2.github.io/tp-dashboard/#=undefined&search=rsanchez-macias)
+* Code Contributed: [Functional Code](https://nus-cs2113-ay1920s2.github.io/tp-dashboard/#search=rsanchez-macias)
 * Contributions: <br/>
   * TaskList(initial version): manages the tasks in the list <br/>
   * JUnit Tests: added tests for Parser and Storage class
