@@ -69,7 +69,7 @@ Displays the set of supported commands <br/>
 Users add tasks using this command. <br/>
 **Usage**: `add  n/<NAME> t/<TIME> l/<LOCATION> d/<DATE> i/<INFORMATION> r/<REMINDER> c/<CATEGORY>` <br/>
   * Only name `<NAME>` is compulsory to include. However, if user only inputs time, 
-  then date of current day will be added automatically. 
+  then date of current day will be automatically added. 
   * Space is okay in `<NAME>`,`<REMINDER>` and `<INFORMATION>`.  e.g.: `n/2113 deadline` is accepted.                                                       
   * The `<TIME>` should be in time duration format: `hh:mm-hh:mm` (e.g. `14:00-16:00`).
    There should be no space between this duration. 
@@ -77,12 +77,24 @@ Users add tasks using this command. <br/>
    However, the number of `<TIME>`should match with the number of `<DATE>`. It is suggested that 
    the number of `<LOCATION>` also match with the number of `<TIME>`. Use space to separate the time 
    zone/date/location. 
+     * Example
+       * `add n/CS2113 t/12:00-13:00 15:00-16:00 d/2020-07-01 2020-09-01 l/NUS NTU`  
+       Adds a task with two time zones, dates, and locations.
   * The default category is TODO. To add a class, just indicate the category is `CLASS`. The category is
-   case-insensitive.  
-  * When adding normal tasks:
-    * `<Date>` should be in format:`yyyy-mm-dd`
-  * When adding class:
-    * `<DATE>` should be the day of the week, represented by an integer (e.g. `1 3` means Mon Wed). 
+   case-insensitive. 
+    
+When adding normal tasks:
+* `<Date>` should be in format:`yyyy-mm-dd`
+* Examples: 
+    * `add n/Project Meeting t/12:00-13:00 15:00-16:00 d/2020-07-01 2020-09-01 l/NUS NTU c/meeting`
+    * `add n/2113 v2.1 t/23:00-24:00 d/2020-05-16 c/deadline`
+    * `add n/Project Meeting t/12:00-13:00 15:00-16:00 d/2020-10-01 2020-10-04 l/NUS NTU`
+    
+When adding class:
+* `<DATE>` should be the day of the week, represented by an integer (e.g. `1 3` means Mon Wed). 
+* Examples: 
+    * `add t/11:00-12:00 01:00-03:00 n/2113 d/3 4 c/CLASS l/COM2 COM1`
+    * `add n/3245 t/17:00-19:00 d/5 c/CLASS`
 
  
 Examples:
